@@ -4,7 +4,7 @@ Put your work in a **topic folder**: `teams/03-tokenizer/<topic>/<file>`, for ex
 Team documents named in the week plan (for example `benchmarks_v1.md`) may sit directly in the team folder. The team lead decides the topic names. Do not make personal folders. Do not make new folders under `teams/`.
 Open a pull request; the lead reviews and merges it. The pr-guard check must pass.
 
-## Status (updated 28 Oct 2026)
+## Status (updated 30 Oct 2026)
 
 Each task is a GitHub issue titled `[G3] ...`. The issue is the source of truth; this table is the index.
 [All G3 issues](https://github.com/theschoolofai/era-v5-lab/issues?q=is%3Aissue+%5BG3%5D+in%3Atitle)
@@ -13,10 +13,6 @@ Each task is a GitHub issue titled `[G3] ...`. The issue is the source of truth;
 
 | Issue | Task | Owner | State |
 |---|---|---|---|
-| #127 | Rebase #126 (`train_bpe.py --special-layout v0`) on main | @sohamniyogi | waiting on rebase |
-| #128 | v1 idea 3: rebalance Dravidian merges in the retrain | @sohamniyogi | in progress |
-| #129 | v1 idea 2: NFC + Malayalam chillu normalizer | **open, claim it on the issue** | unclaimed |
-| #131 | COMPARE.md: v0 results table (TSAI follow-up to #107) | @HariniJasti | open |
 | #132 | Fill `g10_slot_00..63` with the G10 special-token list | @rjvim | waiting on G10 (31 Oct) |
 
 ### Done
@@ -26,6 +22,9 @@ Each task is a GitHub issue titled `[G3] ...`. The issue is the source of truth;
 | #72 | Baseline reproduced: BrahmicTokenizer-131K, FLORES mean fertility 2.8355 (exact match) | @HariniJasti |
 | #107 | v0: reserved special slots named (G10, lang, ctrl blocks) | @rjvim |
 | #108 | Harness, `train_bpe.py` with fixed script slots, c0 build, COMPARE.md | @sohamniyogi |
+| #134 | v1 idea 2: Unicode normalizer (NFC + chillu + Bn/Pa nukta re-join), no id changes (closes #129) | @HariniJasti |
+| #137 | `train_bpe --special-layout v0` (closes #127) and v1-c1 retrain: mean Indic −16.97% vs v0 (closes #128) | @sohamniyogi |
+| #145 | COMPARE.md: v0 per-language results table (closes #131) | @HariniJasti |
 | #147 | Sarvam-m vs Tekken structural identity: same BPE table, 6 renamed specials, ids 10-19 shifted (closes #130) | @riyaagrahari |
 
 ### Areas
